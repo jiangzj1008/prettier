@@ -47,7 +47,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with: 
-          path: './website/static'
+          path: './website/build/prettier'
 
   # Deployment job
   deploy:
