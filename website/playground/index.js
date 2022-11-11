@@ -55,6 +55,13 @@ function augmentOption(option) {
     (option.inverted ? "no-" : "") +
     option.name.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
 
+  if (option.name === "parser") {
+    option.choices.push({
+      value: "lehbs-parser",
+      description: "lehbs-parser"
+    })
+  }
+
   return option;
 }
 

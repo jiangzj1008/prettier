@@ -28,6 +28,19 @@ const PRETTIER_DIR = IS_PULL_REQUEST
   : path.dirname(require.resolve("prettier"));
 const PLAYGROUND_PRETTIER_DIR = path.join(WEBSITE_DIR, "static/lib");
 
+async function copyLehbsPlugin() {
+  const prettierPluginLehbs_dir = path.dirname(require.resolve("prettier-plugin-lehbs/standalone.js"))
+
+  const files = await fastGlob("standalone.js", {
+    cwd: prettierPluginLehbs_dir,
+  });
+  
+  for (const fileName of files) {
+    const file = path.join(prettierPluginLehbs_dir, fileName);
+    await copyFile(file, path.join(PLAYGROUND_PRETTIER_DIR, "prettierPluginLehbs.js"));
+  }
+}
+
 async function buildPrettier() {
   // --- Build prettier for PR ---
   const packageJsonFile = path.join(PROJECT_ROOT, "package.json");
@@ -93,6 +106,9 @@ if (IS_PULL_REQUEST) {
 
 console.log("Preparing files for playground...");
 await buildPlaygroundFiles();
+
+console.log("Preparing plugins...");
+await copyLehbsPlugin();
 
 // --- Site ---
 console.log("Installing website dependencies...");

@@ -1,4 +1,4 @@
-/* globals prettier prettierPlugins parsersLocation */
+/* globals prettier prettierPlugins parsersLocation prettierPluginLehbs */
 
 "use strict";
 
@@ -12,6 +12,7 @@ function importScriptOnce(url) {
 
 importScripts("lib/parsers-location.js");
 importScripts("lib/standalone.js");
+importScripts("lib/prettierPluginLehbs.js");
 
 // this is required to only load parsers when we need them
 const parsers = Object.create(null);
@@ -170,6 +171,15 @@ function handleFormatMessage(message) {
 function formatCode(text, options, rethrowEmbedErrors) {
   try {
     self.PRETTIER_DEBUG = rethrowEmbedErrors;
+
+    if (options.parser === "lehbs-parser") {
+      options = {
+        ...options,
+        parser: "lehbs-parser",
+        plugins: [prettierPluginLehbs],
+      }
+    }
+
     return prettier.formatWithCursor(text, options);
   } catch (e) {
     if (e.constructor && e.constructor.name === "SyntaxError") {
