@@ -1,7 +1,7 @@
 "use strict";
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/service-worker.js", {
-    scope: "/playground/",
+  navigator.serviceWorker.register("/prettier/service-worker.js", {
+    scope: "/prettier/",
   });
 }

@@ -1,5 +1,5 @@
 export default function WorkerApi(source) {
-  const worker = new Worker(source);
+  const worker = new Worker(`/prettier${source}`);
   let counter = 0;
   const handlers = {};
 
