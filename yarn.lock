@@ -4571,10 +4571,10 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-lehbs-parser@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/lehbs-parser/-/lehbs-parser-0.0.5.tgz#ccc8110c9a08cf82ec37f2b5f70093cfeb4ef14b"
-  integrity sha512-5/UbEWxgU12N3S+vGIUhBLsUm3UYK/6/yncE63wlOvhLGid4AmxlbzUp2ks/FVxvDUeEwI85JU52iC2zrjZrQA==
+lehbs-parser@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/lehbs-parser/-/lehbs-parser-0.0.7.tgz#aefc1ad5f87218e5d47715ae422170862835f19e"
+  integrity sha512-SkLdGedTi370gFuhuyxDavgxxmuyxj0a4lf4s799CtWrFtBva5N9+UL9Wg55ZYDxw9dpv59fkISsqO9yyPwXag==
   dependencies:
     "@glimmer/interfaces" "0.84.2"
     "@glimmer/util" "0.84.2"
@@ -5351,20 +5351,18 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
-prettier-plugin-lehbs@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.npmjs.org/prettier-plugin-lehbs/-/prettier-plugin-lehbs-0.0.2.tgz#6dcca518b6c53b314c4839069317ae57a3111242"
-  integrity sha512-UNi4xTnNQGbaIk++q6PKJQncpG0psc9vNPKiPjMb7scVqD+zogrLe20OXPbw+7A6TEqnxEl78RxIpOYnNfJm8g==
+prettier-plugin-lehbs@0.0.17:
+  version "0.0.17"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-lehbs/-/prettier-plugin-lehbs-0.0.17.tgz#1cc2b1e5269b630c5ec1e966819cd305c803a9cd"
+  integrity sha512-A48sTVeKEc8lCyMNoLTK+Smk/oXOU5PoSrKe8BtEIvM10HGNLHMScM/HPmqx/3F9XdB+oif3HW+1Ze5EwwMc7Q==
   dependencies:
-    "@glimmer/syntax" "0.84.2"
-    lehbs-parser "^0.0.5"
+    lehbs-parser "^0.0.7"
     lines-and-columns "2.0.3"
     linguist-languages "7.21.0"
     lodash "^4.17.21"
     outdent "0.8.0"
     prettier "^2.7.1"
     semver "7.3.7"
-    toml "^2.3.5"
 
 prettier@2.8.0:
   version "2.8.0"
@@ -6187,11 +6185,6 @@ to-regex-range@^5.0.1:
   integrity sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
   dependencies:
     is-number "^7.0.0"
-
-toml@^2.3.5:
-  version "2.3.6"
-  resolved "https://registry.npmjs.org/toml/-/toml-2.3.6.tgz#25b0866483a9722474895559088b436fd11f861b"
-  integrity sha512-gVweAectJU3ebq//Ferr2JUY4WKSDe5N+z0FvjDncLGyHmIDoxgY/2Ie4qfEIDm4IS7OA6Rmdm7pdEEdMcV/xQ==
 
 tough-cookie@^4.0.0:
   version "4.0.0"
