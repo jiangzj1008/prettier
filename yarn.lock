@@ -5351,10 +5351,10 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
-prettier-plugin-lehbs@0.0.20:
-  version "0.0.20"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-lehbs/-/prettier-plugin-lehbs-0.0.20.tgz#2038732b0bb77b35994d4e5a2972bb5e41f7b7dd"
-  integrity sha512-dkw7qohRBUFi/x9dz1EMP+cd52/qHWmaeSYWigH2Ek0vyOcNfMyUHNp0Zhs8frg14i4k7MZ7Ub+qvp0PpN9UWw==
+prettier-plugin-lehbs@0.0.21:
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-lehbs/-/prettier-plugin-lehbs-0.0.21.tgz#47a86c5942f6cb047235c1f2b827f6600572cb3f"
+  integrity sha512-NQRYBYm9gWZAwOyJCzkdSA/dc9Ufyr0js10N0JR6K5A9krdGZJBozOzfPykn//AKq4qkGyKo9f36+CxrQMFBYw==
   dependencies:
     lehbs-parser "^0.0.7"
     lines-and-columns "2.0.3"
