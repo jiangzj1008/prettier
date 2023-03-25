@@ -4571,10 +4571,10 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-lehbs-parser@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/lehbs-parser/-/lehbs-parser-0.0.7.tgz#aefc1ad5f87218e5d47715ae422170862835f19e"
-  integrity sha512-SkLdGedTi370gFuhuyxDavgxxmuyxj0a4lf4s799CtWrFtBva5N9+UL9Wg55ZYDxw9dpv59fkISsqO9yyPwXag==
+lehbs-parser@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/lehbs-parser/-/lehbs-parser-0.0.9.tgz#d584a247910990286c34f367427548570cc96674"
+  integrity sha512-HEwzubhcczoZO7Hzde0Td26xy82HWwPyDEPgsSqugBh/PUSLglCn7LLS63rECFDyjYr/OsLDKQSt4/yuUBVR0A==
   dependencies:
     "@glimmer/interfaces" "0.84.2"
     "@glimmer/util" "0.84.2"
@@ -5351,12 +5351,12 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
-prettier-plugin-lehbs@0.0.21:
-  version "0.0.21"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-lehbs/-/prettier-plugin-lehbs-0.0.21.tgz#47a86c5942f6cb047235c1f2b827f6600572cb3f"
-  integrity sha512-NQRYBYm9gWZAwOyJCzkdSA/dc9Ufyr0js10N0JR6K5A9krdGZJBozOzfPykn//AKq4qkGyKo9f36+CxrQMFBYw==
+prettier-plugin-lehbs@0.0.22:
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-lehbs/-/prettier-plugin-lehbs-0.0.22.tgz#2cb6ffc782cf8aad5a984350a7db008b7da56719"
+  integrity sha512-bHEiSnIpIcn15X+Rfnv6cfyP1shvBcqxRYC4mb3W3qT+AoLjunv8GNMMJceaeT0k29pNa7xiP8HUjvR56G5Ixw==
   dependencies:
-    lehbs-parser "^0.0.7"
+    lehbs-parser "^0.0.9"
     lines-and-columns "2.0.3"
     linguist-languages "7.21.0"
     lodash "^4.17.21"
